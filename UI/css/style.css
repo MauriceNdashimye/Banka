@@ -1,0 +1,173 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 0;
+    background-color: #ffffff;
+}
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+header{
+    background: #35424a;
+    color:#ffffff;
+    padding-top: 30px;
+    min-height: 70%;
+    border-bottom:#e8491d solid 2px;
+    box-shadow: 0px 1px 0px 1px #00887a;
+}
+
+/*Authentication*/
+.auth-content{
+    border: #ffccbc solid 1px;
+    width: 400px;
+    border-radius: 20px;
+    margin:auto;
+    padding: 20px;
+    margin-top:150px;
+    background-color: #77a6f7;
+}
+
+.form-title{
+    color:#ffffff;
+    margin-bottom: 10px;
+}
+
+.form-control{
+    width:97%;
+    margin-bottom: 20px;
+    height: 35px;
+    padding-left: 3%;
+    font-size:15px;
+    border: #ffccbc solid 1px;
+}
+
+.pull-right{
+    float: right;
+}
+
+.btn-primary{
+    width: 100%;
+    background-color: #00887a;
+    color:#ffffff;
+    border: none;
+    height: 40px;
+    font-size: 18px;
+}
+.btn-primary:hover{
+    background-color:#05685e ;
+}
+
+.forget-password{
+    font-size:13px;
+    margin-bottom: 20px;
+
+}
+
+.sign-up{
+    color: #ffffff;
+    margin-top: 20px;
+}
+
+.subtitle{
+    color: #064b44;
+}
+.auth-logo{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+header a{
+    color:#ffffff; 
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;  
+}
+header ul{
+    margin:0;
+    padding:0;
+}
+
+header li{
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header #braning{
+    float: left;
+}
+
+header #branding h1{
+    margin: 0;
+}
+
+header nav
+{
+    float: right;
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .overlay:target {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #77a6f7;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+  }
+  
+  .popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #00887a;
+  }
+  .popup .close:hover {
+    color:#064b44;
+  }
+  .popup .content {
+    max-height: 30%;
+    overflow: auto;
+  }
+  .form-link{
+      text-decoration: none;
+      color: #064b44;
+  }
+
+.form-link:hover{
+    text-decoration: underline;
+}
+  
+  @media screen and (max-width: 700px){
+    .box{
+      width: 70%;
+    }
+    .popup{
+      width: 70%;
+    }
+  }
