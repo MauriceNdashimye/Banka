@@ -11,6 +11,10 @@ body{
     overflow: hidden;
 }
 
+.dropdown{
+    display: none;
+}
+
 .pull-right{
     float: right;
 }
