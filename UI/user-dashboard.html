@@ -7,6 +7,7 @@
         <meta name="Author" content="Maurice Ndashimye">
         <title>Banka | User dashboard</title>
         <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/simple-line-icons.css">
     </head>
     <body>
         <header>
@@ -14,9 +15,23 @@
             <div id="main-logo">
               <h1>Banka</h1>
             </div>
-            
-            <div class="con-tooltip pull-right">
-                    <img src="./img/user.png">
+            <div class="user pull-right">
+                <ul class="dropdown-menu">
+                    <li class="link">
+                      <a href="#">
+                        Contact Us
+                      </a>
+                    </li>
+                    <li class="divider"></li>
+                    <li class="link">
+                      <a href="index.html">
+                        Logout
+                      </a>
+                    </li>
+              </ul>
+            </div>
+            <div id="logout-toggler" class="con-tooltip pull-right">
+                    <img id="logout-menu-toggler" src="./img/user.png">
                     <div class="tooltip ">
                       <p>John Doe</p>
                     </div>
@@ -29,72 +44,32 @@
         <section id="main">
           <div class="container">
                 <h1>User Dashboard</h1>
-                <div class="tabordion">
-                  <section id="section1">
-                    <input type="radio" name="sections" id="option1" checked>
-                    <label for="option1">User profile</label>
-                    <article>
-                      <h2>User profile</h2>
-                      <p>John Ono Lennon, (born John Winston Lennon; 9 October 1940 – 8 December 1980), was an English musician, singer and songwriter who rose to worldwide fame as a founder member of the rock band the Beatles, the most commercially successful band in the history of popular music. With Paul McCartney, he formed a songwriting partnership that is one of the most celebrated of the 20th century.</p>
-                      <h2>User accounts</h2>
-                      <table class="table1">
-                            <tr>
-                              <th>Account number</th>
-                              <th>Date opened</th> 
-                              <th>Balance</th>
-                            </tr>
-                            <tr>
-                              <td>22432312434534</td>
-                              <td>12/05/05</td>
-                              <td>80.324</td>
-                            </tr>
-                            <tr>
-                                <td>34534534534535</td>
-                              <td>11/11/14</td>
-                              <td>100,000</td>
-                            
-                              
-                            </tr>
-                            <tr>
-                            <td>45453453454534</td>
-                              <td>12/12/12</td>
-                              <td>5,000</td>
-                            </tr>
-                          </table>                    </article>
-                  </section>
-                  <section id="section2">
-                    <input type="radio" name="sections" id="option2">
-                    <label for="option2">User transactions</label>
-                    <article>
-                      <h2>User transactions</h2>
-                      <table class="table1">
-                            <tr>
-                              <th>Account number</th>
-                              <th>Transaction</th>
-                            </tr>
-                            <tr>
-                              <td>22432312434534</td>
-                              <td>80.324</td>
-                            </tr>
-                            <tr>
-                                <td>34534534534535</td>
-                              <td>100,000</td>
-                            
-                              
-                            </tr>
-                            <tr>
-                            <td>45453453454534</td>
-                              <td>5,000</td>
-                            </tr>
-                          </table>  
-                    </article>
-                  </section>
+                <div class="tab">
+                  <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">London</button>
+                  <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
+                  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
                 </div>
+                
+                <div id="London" class="tabcontent">
+                  <h3>London</h3>
+                  <p>London is the capital city of England. <i class="icon-login"></i></p>
+                </div>
+                
+                <div id="Paris" class="tabcontent">
+                  <h3>Paris</h3>
+                  <p>Paris is the capital of France.</p> 
+                </div>
+                
+                <div id="Tokyo" class="tabcontent">
+                  <h3>Tokyo</h3>
+                  <p>Tokyo is the capital of Japan.</p>
+                </div>
+
           </div>
         </section>
-    
         <footer>
           <p>BANKA, Copyright &copy; 2019</p>
         </footer>
+        <script type="text/javascript" src="./js/main.js"></script>
       </body>
 </html>
