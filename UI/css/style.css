@@ -421,95 +421,69 @@ aside:hover{
 .info-card table{
   width: 80%;
   float: left;
+  border: none;
+  margin-top:10px;
+  padding-bottom: 10px;
+  background: none;
+  box-shadow: none !important; 
+}
+
+.info-card td{
+  text-align: left;
+
 }
 
 /*table style*/
-table {
-  border-spacing: 1;
-  border-collapse: collapse;
-  background: white;
-  border-radius: 6px;
-  overflow: hidden;
-  max-width: 800px;
-  width: 100%;
-  margin: 0 auto;
-  position: relative;
-}
-table * {
-  position: relative;
-}
-table td, table th {
-  padding-left: 8px;
-}
-table thead tr {
-  height: 60px;
-  background: #f64976;
-  font-size: 16px;
-}
-table tbody tr {
-  height: 48px;
-  border-bottom: 1px solid #e3f1d5;
-}
-table tbody tr:last-child {
-  border: 0;
-}
-table td, table th {
-  text-align: left;
-}
-table td.l, table th.l {
-  text-align: right;
-}
-table td.c, table th.c {
-  text-align: center;
-}
-table td.r, table th.r {
-  text-align: center;
-}
-@media screen and (max-width: 35.5em) {
-  table {
-    display: block;
- }
-  table > *, table tr, table td, table th {
-    display: block;
- }
-  table thead {
-    display: none;
- }
-  table tbody tr {
-    height: auto;
-    padding: 8px 0;
- }
-  table tbody tr td {
-    padding-left: 45%;
-    margin-bottom: 12px;
- }
-  table tbody tr td:last-child {
-    margin-bottom: 0;
- }
-  table tbody tr td:before {
-    position: absolute;
-    font-weight: 700;
-    width: 40%;
-    left: 10px;
-    top: 0;
- }
-  table tbody tr td:nth-child(1):before {
-    content: "Code";
- }
-  table tbody tr td:nth-child(2):before {
-    content: "Stock";
- }
-  table tbody tr td:nth-child(3):before {
-    content: "Cap";
- }
-  table tbody tr td:nth-child(4):before {
-    content: "Inch";
- }
-  table tbody tr td:nth-child(5):before {
-    content: "Box Type";
- }
+table{
+  border: #00887a solid 2px;
+  border-radius: 5px;
+  padding: 2px;
+  margin:auto;
+  margin-top: 20px;
+  background-color: #d3e3fc;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.19), 0 2px 2px rgba(0, 0, 0, 0.23);
 }
 
+table th{
+  padding: 8px;
+  font-weight: normal;
+  font-size: 19px;
+  background-color: #00887a;
+  color: #ffffff;
+  width: 10%;
+}
+
+table th.num{
+  width: 2%;
+}
+
+table tr:hover td{
+  background-color:#77a6f7;
+  color:#ffffff;
+}
+
+table td{
+  background-color:#ffffff;
+  color: #064b44;
+  padding: 4px;
+  text-align: center;
+}
+
+select{
+  margin-left: 5%;
+  height: 36px;
+  border: #00887a solid 2px;
+  font-size: 18px;
+  color: #064b44;
+  border-radius: 5px;
+}
+
+select .selct
+
+select option{
+  font-size: 15px;
+  padding: 5px 0;
+}
 
 .user{
   visibility: hidden;
