@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <meta name="description" content="Lightweight bank application">
+        <meta name="Author" content="Maurice Ndashimye">
+        <title>Banka | Welcome</title>
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+            <div class="container">
+                <div class="auth-content">
+                    <div class="auth-logo">
+                        Banka
+                    </div>
+                    <div class="form-set">
+                      <form>
+                        <div class="form-title">
+                          <span class="title">Welcome.</span>
+                        <span class="subtitle">Please login.</span> or <a class="form-link" href="#popup1">Sign-up here.</a></p>
+                        </div>
+                        <div class="form-body">
+                            <input class="form-control" type="text" placeholder="Username">
+                            <input class="form-control" type="password" placeholder="Password">
+                        </div>
+                        </div>
+                        <div class="form-actions">
+                          <button class="btn-primary" type="submit"><a href="user-dashboard.html">Login</a></button>
+                          <a href="#popup2" class="form-link pull-right forget-password">Forgot Password?</a>
+                          <p class="sign-up">
+                                        <div id="popup1" class="overlay">
+                                            <div class="popup">
+                                                    <div class="auth-logo">
+                                                            Banka
+                                                        </div>
+                                                        <div class="form-set">
+                                                          <form>
+                                                              <span class="title">Welcome. Please enter your details.</span>
+                                                            <a class="close" href="#">&times;</a>                                                            
+                                                            <div class="form-body">
+                                                                <input class="form-control" type="text" placeholder="First name">
+                                                                <input class="form-control" type="password" placeholder="Last name">
+                                                                <input class="form-control" type="text" placeholder="E-mail">
+                                                                <input class="form-control" type="password" placeholder="Phone number">
+                                                                <input class="form-control" type="text" placeholder="ID number">
+                                                                <input class="form-control" type="password" placeholder="Address">
+                                                            </div>
+                                                            <div class="form-actions">
+                                                              <button class="btn-primary" type="submit">Sign up</button>
+                                                            </div>
+                                            </div>
+                                        </div>
+                        </div>
+                        <div id="popup2" class="overlay">
+                                <div class="popup">
+                                        <div class="auth-logo">
+                                                Banka
+                                            </div>
+                                            <div class="form-set">
+                                              <form>
+                                                <a class="close" href="#">&times;</a>                                                            
+                                                <div class="form-body">
+                                                    <input class="form-control" type="text" placeholder="E-mail">
+                                                    <input class="form-control" type="text" placeholder="Phone number">
+                                                </div>
+                                                <div class="form-actions">
+                                                  <button class="btn-primary" type="submit">Reset password</button>
+                                                </div>
+                                </div>
+                            </div>
+            </div>
+                      </form>
+                    </div>
+                  </div>
+            </div>
+    </body>
+</html>
