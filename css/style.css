@@ -183,7 +183,7 @@ aside{
   display: none;
 }
 
-.create-an-account span{
+.info-header{
   color: #00887a;
   margin: 5px;
   font-size: 18px;
@@ -470,7 +470,7 @@ table td{
 }
 
 select{
-  margin-left: 5%;
+  margin-left: 5px;
   height: 36px;
   border: #00887a solid 2px;
   font-size: 18px;
@@ -478,7 +478,9 @@ select{
   border-radius: 5px;
 }
 
-select .selct
+select option[disabled] {
+  display: none;
+}
 
 select option{
   font-size: 15px;
@@ -497,9 +499,11 @@ select option{
   right: 8%;
 }
 
-.dropdown{
+.logout-dropdown{
     display: none;
 }
+
+
 /*body {
   background: #9bc86a;
   font: 400 14px 'Calibri', 'Arial';
