@@ -3,9 +3,20 @@ body{
     font-size: 15px;
     line-height: 1.5;
     padding: 0;
-    background-color: #ffffff;
-    height: 100%;
+    background-color: #d3e3fc;
 }
+
+aside{
+  position: absolute;
+  background-color: #00887a;
+  border-radius: 5px;
+  margin: 20px;
+  width: 66px;
+  border: #00887a solid 1px;
+  overflow: hidden;
+  transition: width 800ms;
+}
+
 .container{
     width: 80%;
     margin: auto;
@@ -75,18 +86,6 @@ body{
     font-weight:bold;
   }
 
-  /* Sidebar */
-aside#sidebar{
-    float:left;
-    width:30%;
-    margin-top:10px;
-  }
-  
-  aside#sidebar .quote input, aside#sidebar .quote textarea{
-    width:90%;
-    padding:5px;
-  }
-  
   /* main-pane */
   article#main-pane{
     float:right;
@@ -128,10 +127,111 @@ aside#sidebar{
     border: #ffccbc solid 1px;
 }
 
+.form-text{
+  width: 96%;
+  height: 120px;
+  margin-bottom: 20px;
+  padding-left: 3%;
+  font-size:15px;
+  border: #ffccbc solid 1px;
+}
+
 .pull-right{
     float: right;
 }
 
+.well-default {
+  width: 80%;
+  min-height: 500px;
+  /*min-width: 320px;*/
+  height: auto;
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.19), 0 2px 2px rgba(0, 0, 0, 0.23);
+  display: flex;
+}
+
+.well-content {
+  width: 41%;
+  margin-left: 3%;
+  height: auto;
+  background: #ffffff;
+  padding: 20px;
+  box-shadow: 1px 1px rgba(0, 0, 0, 0.19), 1px 1px 2px 2px rgba(0, 0, 0, 0.23);
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.add-btn{
+  background-color: #ffffff;
+  border: #00887a solid 2px;
+  padding: 4px 4px 0 4px;
+  width: fit-content;
+  font-size: 25px;
+  border-radius: 3px;
+  color: #00887a;
+  cursor: pointer;
+  margin-left: 10px;
+  box-shadow: -1px 1px 3px 0px #77a6f7;
+}
+
+.dashboard{
+  display: block;
+}
+
+.transactions{
+  display: none;
+}
+
+.create-an-account span{
+  color: #00887a;
+  margin: 5px;
+  font-size: 18px;
+}
+
+.add-btn i:hover{
+  color: #ffccbc;
+}
+
+.info-card{
+  width: 90%;
+  margin: 10px;
+  border: #00887a solid 2px;
+  border-radius: 10px;
+  padding-left: 20px;
+  box-shadow: -1px 1px 3px 0px #77a6f7;
+}
+
+.info-card i{
+  margin-top: 10px;
+  margin-right: 10px;
+  font-size: 40px;
+  color: #00887a;
+}
+
+.info-card i:hover{
+  color:#ffccbc;
+}
+
+.info-card p span{
+  width: 50px;
+}
+
+h1{
+  width: 100%;
+  text-align: center;
+  margin:0;
+}
+h1 span{
+  padding-left: 10px;
+  color: #00887a;
+}
+
+h1 i{
+  color: #064b44;
+  font-size: 24px;
+  font-weight: 900;
+}
 .btn-primary{
     width: 100%;
     background-color: #00887a;
@@ -266,51 +366,62 @@ aside#sidebar{
     opacity: 1;
   }
 
-/* Style the tab */
-.tab {
+/*side menu style*/
+aside ul{
+  padding: 8px 0;
+  margin: 0;
+}
+aside ul li{
+  list-style: none;
+  padding: 4px 12px 0px 22px;
+  background-color: #ffffff;
+}
+
+aside ul li:hover{
+  background-color: #77a6f7;
+}
+
+aside ul li.active{
+  background-color: #77a6f7;
+  border-left: #ffccbc solid 6px;
+  padding-left: 16px;
+}
+
+aside ul li:hover>span{
+  color: #ffffff;
+}
+
+aside ul li.active>span{
+  color: #ffffff;
+}
+
+.separator{
+  height: 8px;
+  padding:0;
+  background-color: #00887a;
+}
+
+aside i{
+  font-size: 25px;
+  color: #064b44;
+}
+
+aside span{
+  padding-left: 21px;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #00887a;
+  position: absolute;
+}
+
+aside:hover{
+  width: 200px;
+}
+
+.info-card table{
+  width: 80%;
   float: left;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
-  width: 30%;
-  height: 300px;
 }
-
-/* Style the buttons inside the tab */
-.tab button {
-  display: block;
-  background-color: inherit;
-  color: black;
-  padding: 22px 16px;
-  width: 100%;
-  border: none;
-  outline: none;
-  text-align: left;
-  cursor: pointer;
-  transition: 0.3s;
-  font-size: 17px;
-}
-
-/* Change background color of buttons on hover */
-.tab button:hover {
-  background-color: #ddd;
-}
-
-/* Create an active/current "tab button" class */
-.tab button.active {
-  background-color: #ccc;
-}
-
-/* Style the tab content */
-.tabcontent {
-  float: left;
-  padding: 0px 12px;
-  border: 1px solid #ccc;
-  width: 70%;
-  border-left: none;
-  height: 300px;
-}
-
-
 
 /*table style*/
 table {
