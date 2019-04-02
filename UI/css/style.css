@@ -188,9 +188,6 @@ aside{
   flex-direction: column;
 }
 
-<<<<<<< HEAD
-.add-btn, .search-btn, .search-btn span, .add-btn span{
-=======
 .cancel-btn, 
 .cancel-btn span, 
 .ok-btn, 
@@ -199,7 +196,6 @@ aside{
 .search-btn, 
 .search-btn span, 
 .add-btn span{
->>>>>>> ft-cashier-164982874
   background-color: #6d3a3a;
   border: none;
   padding: 4px 4px 0 4px;
@@ -210,12 +206,6 @@ aside{
   cursor: pointer;
   margin-left: 10px;
   box-shadow: -1px 1px 3px 0px #77a6f7;
-<<<<<<< HEAD
-  width:45%;
-}
-
-.search-btn, .search-btn span{
-=======
   width:46.1%;
 }
 
@@ -224,7 +214,6 @@ aside{
 .search-btn, 
 .search-btn span
 {
->>>>>>> ft-cashier-164982874
   background-color: #00887a;
 }
 
@@ -240,16 +229,6 @@ aside{
   padding-left: 0;
 }
 
-<<<<<<< HEAD
-.add-btn:hover, .add-btn span:hover{
-  color: #ffccbc;
-}
-
-.search-btn:hover, .search-btn span:hover{
-  color: #77a6f7;
-}
-
-=======
 .cancel-btn:hover, .add-btn:hover, .add-btn span:hover{
   color: #ffccbc;
 }
@@ -271,7 +250,6 @@ aside{
 .cancel-btn{
   margin-right: 10px;
 }
->>>>>>> ft-cashier-164982874
 
 .dashboard{
   display: block;
