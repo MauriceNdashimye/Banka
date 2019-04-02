@@ -5,8 +5,9 @@
         <meta name="viewport" content="width=device-width">
         <meta name="description" content="Lightweight bank application">
         <meta name="Author" content="Maurice Ndashimye">
-        <title>Banka | User dashboard</title>
+        <title>Banka | Staff dashboard</title>
         <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/simple-line-icons.css">
     </head>
     <body>
         <header>
@@ -14,87 +15,219 @@
             <div id="main-logo">
               <h1>Banka</h1>
             </div>
-            
-            <div class="con-tooltip pull-right">
-                    <img src="./img/user.png">
+            <div class="user pull-right">
+                <ul>
+
+                    <li class="link">
+                      <a href="index.html">
+                        Logout
+                      </a>
+                    </li>
+              </ul>
+            </div>
+            <div id="logout-toggler" class="con-tooltip pull-right">
+                    <img id="logout-menu-toggler" src="./img/staff.png">
                     <div class="tooltip ">
-                      <p>John Doe</p>
+                      <p>Jack Smith</p>
                     </div>
-              <div class="dropdown">
-                  <a href="#">Logout</a>
-              </div>
                   </div>
           </div>
         </header>   
-        <section id="main">
-          <div class="container">
-                <h1>User Dashboard</h1>
-                <div class="tabordion">
-                  <section id="section1">
-                    <input type="radio" name="sections" id="option1" checked>
-                    <label for="option1">User profile</label>
-                    <article>
-                      <h2>User profile</h2>
-                      <p>John Ono Lennon, (born John Winston Lennon; 9 October 1940 – 8 December 1980), was an English musician, singer and songwriter who rose to worldwide fame as a founder member of the rock band the Beatles, the most commercially successful band in the history of popular music. With Paul McCartney, he formed a songwriting partnership that is one of the most celebrated of the 20th century.</p>
-                      <h2>User accounts</h2>
-                      <table class="table1">
-                            <tr>
-                              <th>Account number</th>
-                              <th>Date opened</th> 
-                              <th>Balance</th>
-                            </tr>
-                            <tr>
-                              <td>22432312434534</td>
-                              <td>12/05/05</td>
-                              <td>80.324</td>
-                            </tr>
-                            <tr>
-                                <td>34534534534535</td>
-                              <td>11/11/14</td>
-                              <td>100,000</td>
-                            
-                              
-                            </tr>
-                            <tr>
-                            <td>45453453454534</td>
-                              <td>12/12/12</td>
-                              <td>5,000</td>
-                            </tr>
-                          </table>                    </article>
-                  </section>
-                  <section id="section2">
-                    <input type="radio" name="sections" id="option2">
-                    <label for="option2">User transactions</label>
-                    <article>
-                      <h2>User transactions</h2>
-                      <table class="table1">
-                            <tr>
-                              <th>Account number</th>
-                              <th>Transaction</th>
-                            </tr>
-                            <tr>
-                              <td>22432312434534</td>
-                              <td>80.324</td>
-                            </tr>
-                            <tr>
-                                <td>34534534534535</td>
-                              <td>100,000</td>
-                            
-                              
-                            </tr>
-                            <tr>
-                            <td>45453453454534</td>
-                              <td>5,000</td>
-                            </tr>
-                          </table>  
-                    </article>
-                  </section>
+        <aside>
+            <ul>
+                <li class="active tablinks">
+                        <i class="icon-home"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li class="separator">
+                </li>
+                <li class="tablinks">
+                    <i class="icon-home"></i>
+                    <span>Transactions</span>
+                </a>
+            </li>
+          </li>
+            </ul>
+        </aside>
+        <section id="main" class="dashboard container well-default">
+          <div class="well-content">
+            <div class>
+                <button class="search-btn" type="button">
+                    <i class="icon-magnifier"></i><span>Search Clients</span> 
+                  </button> 
+                  <button class="add-btn" type="button">
+                <i class="icon-plus"></i><span>New Client</span>
+              </button>  
+            </div>
+              <div class="info-card">
+                  <a href="#"><i class="icon-info pull-right"></i></a>
+                  <table>
+                      <tr>
+                       <td>Bank Account No.</td>
+                       <td>124-454-4545</td>
+                      </tr>
+                      <tr>
+                       <td>
+                         Date of Creation
+                       </td>
+                       <td>15/12/2007</td>
+                      </tr>
+                      <tr>
+                          <td>Account Status</td>
+                          <td>Suspended</td>
+                         </tr>
+                         <tr>
+                          <td>
+                            Account Balance
+                          </td>
+                          <td>-100$</td>
+                         </tr>
+                     </table>
                 </div>
           </div>
+          <div class="well-content">
+              <h1><i class="icon-bell"></i><span>Notifications</span></h1>
+              <div class="info-card">
+                  <a href="#"><i class="icon-info pull-right"></i></a>
+                  <p>
+                    You have a pending transaction to approve on the account 155678637564
+                  </p>
+              </div>
+              <div class="info-card">
+                  <a href="#"><i class="icon-info pull-right"></i></a>
+                  <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nis
+                  </p>
+              </div>
+              <div class="info-card">
+                  <a href="#"><i class="icon-info pull-right"></i></a>
+                  <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nis
+                  </p>
+              </div>
+          </div>
+
         </section>
-    
+        <section id="main" class="transactions container well-default">
+            <h1><span>Accounts Transctions</span></h1>
+            <div class="bank-select"> <span class="info-header">Select a Bank Account</span>
+            <select id="bank-account" name="bank-accounts"  onchange="onAccountSelected()">  
+                <option value="155678637564">155-786-7564</option>
+                <option value="1245454545454">124-454-4545</option>
+              </select>
+            </div>
+            <table id="Account-transaction">
+                <thead>
+                  <tr>
+                    <th class="num">#</th>
+                    <th>Code</th>
+                    <th>Type</th>
+                    <th>Date</th>
+                    <th>Amount</th>
+                    <th>Charges</th>
+                    <th>Balance</th>
+                    <th>Comment</th>
+                  </tr>
+                </thead>
+                <tbody>
+                    <tr class="acc1">
+                      <td>1</td>
+                        <td>01451/02/18</td>
+                        <td>Credit</td>
+                        <td>12/02/2018</td>
+                        <td>3,500,000</td>
+                        <td>5,000</td>
+                        <td>3,455,000</td>
+                        <td>Successful</td>
+                      </tr>
+                      <tr class="acc1">
+                          <td>2</td>
+                        <td>6458/08/18</td>
+                        <td>Debit</td>
+                        <td>19/08/2018</td>
+                        <td>3000,000</td>
+                        <td>4,000</td>
+                        <td>491,000</td>
+                        <td>Successful</td>
+                      </tr>
+                      <tr class="acc1">
+                          <td>3</td>
+                        <td>0058/12/18</td>
+                        <td>Interest</td>
+                        <td>19/08/2018</td>
+                        <td>50,000</td>
+                        <td>0</td>
+                        <td>561,000</td>
+                        <td>Successful</td>
+                      </tr>
+                      <tr class="acc1">
+                          <td>4</td>
+                        <td>0158/01/19</td>
+                        <td>Transfer</td>
+                        <td>29/01/2019</td>
+                        <td>50,000</td>
+                        <td>1000</td>
+                        <td>561,000</td>
+                        <td>Pending</td>
+                      </tr>
+
+                  <tr class="acc2">
+                      <td>1</td>
+                    <td>01451/02/17</td>
+                    <td>Credit</td>
+                    <td>12/02/2017</td>
+                    <td>300,000</td>
+                    <td>500</td>
+                    <td>299,500</td>
+                    <td>Successful</td>
+                  </tr>
+                  <tr class="acc2">
+                      <td>2</td>
+                    <td>6458/08/17</td>
+                    <td>Debit</td>
+                    <td>19/08/2017</td>
+                    <td>50,000</td>
+                    <td>200</td>
+                    <td>249,300</td>
+                    <td>Successful</td>
+                  </tr>
+                  <tr class="acc2">
+                      <td>3</td>
+                    <td>0058/12/17</td>
+                    <td>Interest</td>
+                    <td>19/08/2017</td>
+                    <td>5000</td>
+                    <td>0</td>
+                    <td>254,300</td>
+                    <td>Successful</td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr class="acc2">
+                    <td>5</td>
+                    <td>Balance</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>254,300</td>
+                  </tr><tr class="acc1">
+                    <td>4</td>
+                    <td>Balance</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>561,000</td>
+                  </tr>
+                </tfoot>
+              </table>
+              
+          </section>
         <footer>
           <p>BANKA, Copyright &copy; 2019</p>
         </footer>
+        <script type="text/javascript" src="./js/main.js"></script>
       </body>
 </html>
