@@ -42,8 +42,6 @@ window.addEventListener('mouseup', function(event){
 );
 
 window.onload = function(){
-    var y = new Date();
-    console.log(y);
     x = document.getElementsByClassName("acc1");
     for(var i=0; i<x.length; i++)
     {
