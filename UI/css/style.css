@@ -162,6 +162,44 @@ aside{
   flex-direction: column;
 }
 
+.add-btn, .search-btn, .search-btn span, .add-btn span{
+  background-color: #6d3a3a;
+  border: none;
+  padding: 4px 4px 0 4px;
+  width: fit-content;
+  font-size: 18px;
+  border-radius: 3px;
+  color: #d3e3fc;
+  cursor: pointer;
+  margin-left: 10px;
+  box-shadow: -1px 1px 3px 0px #77a6f7;
+  width:45%;
+}
+
+.search-btn, .search-btn span{
+  background-color: #00887a;
+}
+
+.add-btn i, .search-btn i{
+  font-size: 25px;
+}
+
+.add-btn span, .search-btn span{
+  box-shadow: none;
+  margin-bottom: 0px;
+  line-height: 0.5;
+  vertical-align: 4.5px;
+  padding-left: 0;
+}
+
+.add-btn:hover, .add-btn span:hover{
+  color: #ffccbc;
+}
+
+.search-btn:hover, .search-btn span:hover{
+  color: #77a6f7;
+}
+
 
 .dashboard{
   display: block;
@@ -473,11 +511,6 @@ select option[disabled] {
 select option{
   font-size: 15px;
   padding: 5px 0;
-}
-
-div .create-an-account{
-  border: #00887a solid 1px;
-  width: 100px;
 }
 
 .user{
