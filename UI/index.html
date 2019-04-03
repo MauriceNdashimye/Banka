@@ -7,6 +7,27 @@
         <meta name="Author" content="Maurice Ndashimye">
         <title>Banka | Welcome</title>
         <link rel="stylesheet" href="./css/style.css">
+        <script type="text/javascript">
+        function validate(){
+    var username = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
+    if ( username == "user" && password == "password"){
+        window.open("user-dashboard.html");
+        return false;
+    }
+    else if(username == "staff" && password == "password"){
+        window.open("staff-dashboard.html");
+        return false;
+    }
+    else if(username == "admin" && password == "password"){
+        window.open("admin-dashboard.html");
+        return false;
+    }
+    else{
+        alert("Wrong username or password");
+    }
+  }
+        </script>
     </head>
     <body>
             <div class="container">
@@ -21,12 +42,12 @@
                         <span class="subtitle">Please login.</span> or <a class="form-link" href="#popup1">Sign-up here.</a></p>
                         </div>
                         <div class="form-body">
-                            <input class="form-control" type="text" placeholder="Username">
-                            <input class="form-control" type="password" placeholder="Password">
+                            <input id="username" class="form-control" type="text" placeholder="Username">
+                            <input id="password" class="form-control" type="password" placeholder="Password">
                         </div>
                         </div>
                         <div class="form-actions">
-                          <button class="btn-primary" type="submit"><a href="user-dashboard.html">Login</a></button>
+                          <button class="btn-primary" id="submit"  type="submit" onclick="validate()">Login</button>
                           <a href="#popup2" class="form-link pull-right forget-password">Forgot Password?</a>
                           <p class="sign-up">
                                         <div id="popup1" class="overlay">
@@ -71,6 +92,8 @@
                             </div>
             </div>
                       </form>
+          <span><b class="note">Usernames: user, staff and admin.<br> Password: password.</span>
+
                     </div>
                   </div>
             </div>

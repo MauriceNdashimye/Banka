@@ -14,7 +14,7 @@ for(var i = 0; i<elements.length; i++ ){
             }
             el = el.nextSibling;
         }
-        if (this.innerHTML.includes("My&nbsp;Accounts")){
+        if (this.innerHTML.includes("My&nbsp;Accounts") || this.innerHTML.includes("Transactions")){
             transactions.style.display = "block";
             dashboard.style.display = "none";
             clients.style.display = "none";
@@ -38,6 +38,7 @@ for(var i = 0; i<elements.length; i++ ){
             transactions.style.display = "none";
             clients.style.display = "none";
             staff.style.display = "block";
+            document.getElementById("search-wrap1").style.display ="block";
         };
         this.classList.add("active");
     };
@@ -176,5 +177,6 @@ function searchTable() {
         }
       } 
     }
-  }
+}
+
 
