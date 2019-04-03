@@ -43,48 +43,140 @@
                 <li class="separator">
                 </li>
                 <li class="tablinks">
-                    <i class="icon-home"></i>
-                    <span>Transactions</span>
+                    <i class="icon-notebook"></i>
+                    <span>My&nbsp;Accounts</span>
                 </a>
-            </li>
-          </li>
+                </li>
+                <li class="separator">
+                </li>
+                <li class="tablinks">
+                    <i class="icon-grid"></i>
+                    <span>Clients'</span>
+                </a>
+                </li>
             </ul>
         </aside>
-        <section id="main" class="dashboard container well-default">
+        <section id="" class="dashboard container well-default">
           <div class="well-content">
-            <div class>
-                <button class="search-btn" type="button">
+            <div>
+                <button id="search-btn" class="search-btn" type="button">
                     <i class="icon-magnifier"></i><span>Search Clients</span> 
                   </button> 
-                  <button class="add-btn" type="button">
+                  <button id="add-btn" class="add-btn" type="button">
                 <i class="icon-plus"></i><span>New Client</span>
               </button>  
             </div>
+            <div id="search-form" class="search-form">
+              <input class="account-no" type="text" placeholder="Account Number">
+              <input type="text" placeholder="First Name">
+              <input type="text" placeholder="Last Name">
+              <input type="text" placeholder="Date of Birth">
+              <input type="text" placeholder="ID Number">
+              <div>
+
+                  <button id="cancel-search" class="cancel-btn" type="button">
+                Cancel
+              </button>  
+              <button id="ok-search" class="ok-btn" type="button">
+                OK
+              </button> 
+            </div>
+            </div>
+            <div id="add-form" class="add-form">
+              <input type="text" placeholder="Title">
+              <input type="text" placeholder="Middle Name">
+              <input type="text" placeholder="First Name">             
+              <input type="text" placeholder="Last Name">
+              <input type="text" placeholder="Date of Birth">
+              <input type="text" placeholder="ID Number">
+              <input type="text" placeholder="Phone Number">
+              <input type="text" placeholder="Email">
+              <input type="text" placeholder="Address Line 1">
+              <input type="text" placeholder="Address Line 2">
+              <input type="text" placeholder="Account Type">
+              <input type="text" placeholder="Currency">
+              <div>
+
+                  <button id="cancel-add" class="cancel-btn" type="button">
+                Cancel
+              </button>  
+              <button id="ok-add" class="ok-btn" type="button">
+                OK
+              </button> 
+            </div>
+            </div>
               <div class="info-card">
                   <a href="#"><i class="icon-info pull-right"></i></a>
+                  <div class="info-card-header"> Rwf Account transactions</div>
                   <table>
                       <tr>
-                       <td>Bank Account No.</td>
-                       <td>124-454-4545</td>
+                       <td>Starting Amount</td>
+                       <td>100,000,000</td>
                       </tr>
                       <tr>
                        <td>
-                         Date of Creation
+                         Current Amount
                        </td>
-                       <td>15/12/2007</td>
+                       <td>46,000,000</td>
                       </tr>
                       <tr>
-                          <td>Account Status</td>
-                          <td>Suspended</td>
+                          <td>Debits</td>
+                          <td>52,000,000</td>
                          </tr>
                          <tr>
                           <td>
-                            Account Balance
+                            Credits
                           </td>
-                          <td>-100$</td>
+                          <td>
+                            34,000,000
+                          </td>
                          </tr>
+                         <tr>
+                            <td>
+                              Transfers
+                            </td>
+                            <td>
+                              36,000,000
+                            </td>
+                           </tr>
                      </table>
                 </div>
+                <div class="info-card">
+                    <a href="#"><i class="icon-info pull-right"></i></a>
+                    <div class="info-card-header"> USD Account transactions</div>
+                    <table>
+                        <tr>
+                         <td>Starting Amount</td>
+                         <td>100,000</td>
+                        </tr>
+                        <tr>
+                         <td>
+                           Current Amount
+                         </td>
+                         <td>38,000</td>
+                        </tr>
+                        <tr>
+                            <td>Debits</td>
+                            <td>64,000</td>
+                           </tr>
+                           <tr>
+                            <td>
+                              Credits
+                            </td>
+                            <td>
+                              2,000
+                            </td>
+                           </tr>
+                           <tr>
+                              <td>
+                                Transfers
+                              </td>
+                              <td>
+                                0
+                              </td>
+                             </tr>
+                       </table>
+                  </div>
           </div>
           <div class="well-content">
               <h1><i class="icon-bell"></i><span>Notifications</span></h1>
@@ -109,121 +201,218 @@
           </div>
 
         </section>
-        <section id="main" class="transactions container well-default">
+        <section id="" class="transactions container well-default">
             <h1><span>Accounts Transctions</span></h1>
-            <div class="bank-select"> <span class="info-header">Select a Bank Account</span>
-            <select id="bank-account" name="bank-accounts"  onchange="onAccountSelected()">  
-                <option value="155678637564">155-786-7564</option>
-                <option value="1245454545454">124-454-4545</option>
+            <div class="bank-select"> <span class="info-header">Select an Account</span>
+            <select id="staff-account" name="staff-accounts"  onchange="onCurrencySelected()">  
+                <option value="rwf-account">RWF Account</option>
+                <option value="usd-account">USD Account</option>
               </select>
+              <span class="added-selector info-header">Choose a Period</span>
+              <select id="period-account" name="bank-accounts"  onchange="onPeriodSelected()">  
+                  <option value="day-account">Day</option>
+                  <option value="week-account">Week</option>
+                  <option value="month-account">Month</option>
+                </select>
             </div>
             <table id="Account-transaction">
                 <thead>
                   <tr>
                     <th class="num">#</th>
                     <th>Code</th>
+                    <th>Client</th>
                     <th>Type</th>
                     <th>Date</th>
                     <th>Amount</th>
-                    <th>Charges</th>
                     <th>Balance</th>
                     <th>Comment</th>
                   </tr>
                 </thead>
                 <tbody>
-                    <tr class="acc1">
+                    <tr class="usd">
                       <td>1</td>
                         <td>01451/02/18</td>
-                        <td>Credit</td>
-                        <td>12/02/2018</td>
-                        <td>3,500,000</td>
-                        <td>5,000</td>
-                        <td>3,455,000</td>
-                        <td>Successful</td>
-                      </tr>
-                      <tr class="acc1">
-                          <td>2</td>
-                        <td>6458/08/18</td>
+                        <td>125-554-5265</td>
                         <td>Debit</td>
-                        <td>19/08/2018</td>
-                        <td>3000,000</td>
-                        <td>4,000</td>
-                        <td>491,000</td>
+                        <td>12/05/2018</td>
+                        <td>5,000</td>
+                        <td>95,0000</td>
                         <td>Successful</td>
                       </tr>
-                      <tr class="acc1">
-                          <td>3</td>
-                        <td>0058/12/18</td>
-                        <td>Interest</td>
-                        <td>19/08/2018</td>
-                        <td>50,000</td>
-                        <td>0</td>
-                        <td>561,000</td>
-                        <td>Successful</td>
-                      </tr>
-                      <tr class="acc1">
-                          <td>4</td>
-                        <td>0158/01/19</td>
-                        <td>Transfer</td>
-                        <td>29/01/2019</td>
-                        <td>50,000</td>
-                        <td>1000</td>
-                        <td>561,000</td>
-                        <td>Pending</td>
-                      </tr>
-
-                  <tr class="acc2">
-                      <td>1</td>
-                    <td>01451/02/17</td>
-                    <td>Credit</td>
-                    <td>12/02/2017</td>
-                    <td>300,000</td>
-                    <td>500</td>
-                    <td>299,500</td>
-                    <td>Successful</td>
-                  </tr>
-                  <tr class="acc2">
+                      <tr class="usd">
                       <td>2</td>
-                    <td>6458/08/17</td>
-                    <td>Debit</td>
-                    <td>19/08/2017</td>
-                    <td>50,000</td>
-                    <td>200</td>
-                    <td>249,300</td>
-                    <td>Successful</td>
-                  </tr>
-                  <tr class="acc2">
-                      <td>3</td>
-                    <td>0058/12/17</td>
-                    <td>Interest</td>
-                    <td>19/08/2017</td>
-                    <td>5000</td>
-                    <td>0</td>
-                    <td>254,300</td>
-                    <td>Successful</td>
-                  </tr>
+                        <td>01958/02/18</td>
+                        <td>120-554-5335</td>
+                        <td>Credit</td>
+                        <td>12/05/2018</td>
+                        <td>2,000</td>
+                        <td>97,0000</td>
+                        <td>Successful</td>
+                      </tr>
+                      <tr class="rwf">
+                          <td>1</td>
+                          <td>01958/02/18</td>
+                          <td>120-554-5335</td>
+                          <td>Debit</td>
+                          <td>12/05/2018</td>
+                          <td>3,000,000</td>
+                          <td>97,0000,000</td>
+                          <td>Successful</td>
+                        </tr>
+                      <tr class="rwf">
+                          <td>2</td>
+                          <td>01958/02/18</td>
+                          <td>120-204-5585</td>
+                          <td>Debit</td>
+                          <td>12/05/2018</td>
+                          <td>3,000,000</td>
+                          <td>95,0000,000</td>
+                          <td>Successful</td>
+                        </tr>
                 </tbody>
                 <tfoot>
-                  <tr class="acc2">
-                    <td>5</td>
-                    <td>Balance</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>254,300</td>
-                  </tr><tr class="acc1">
-                    <td>4</td>
-                    <td>Balance</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>561,000</td>
+                  <tr class="usd">
+                      <td>3</td>
+                      <td>Balance</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td>97,000</td>
+                      <td></td>
                   </tr>
+                  <tr class="rwf">
+                      <td>3</td>
+                      <td>Balance</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td>95,000,000</td>
+                      <td></td>
+                    </tr>
                 </tfoot>
               </table>
               
+          </section>
+          <section id="transactions" class="clients container well-default">
+              <h1><span>Accounts Transctions</span></h1>
+              <div id="search-wrap" class="search-wrap">
+                  <div  class="search">
+                      <i class="icon-magnifier searchButton"></i><input type="text" id="searchTerm" class="searchTerm" onkeyup="searchTable()"placeholder="Enter a Bank Account Number">
+                  </div>
+               </div>
+               <table id="Accounts-transaction">
+                  <thead>
+                    <tr>
+                      <th class="num">#</th>
+                      <th>Code</th>
+                      <th>Client</th>
+                      <th>Type</th>
+                      <th>Date</th>
+                      <th>Amount</th>
+                      <th>Balance</th>
+                      <th>Comment</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <td>1</td>
+                            <td>01451/02/18</td>
+                            <td>125-554-5265</td>
+                            <td>Debit</td>
+                            <td>12/05/2018</td>
+                            <td>5,000</td>
+                            <td>95,0000</td>
+                            <td>Successful</td>
+                          </tr>
+                          <tr>
+                          <td>2</td>
+                            <td>01958/02/18</td>
+                            <td>120-554-5335</td>
+                            <td>Credit</td>
+                            <td>12/05/2018</td>
+                            <td>2,000</td>
+                            <td>97,0000</td>
+                            <td>Successful</td>
+                          </tr>
+                          <tr>
+                              <td>3</td>
+                              <td>01958/02/18</td>
+                              <td>120-554-5335</td>
+                              <td>Debit</td>
+                              <td>12/05/2018</td>
+                              <td>3,000,000</td>
+                              <td>97,0000,000</td>
+                              <td>Successful</td>
+                            </tr>
+                          <tr>
+                              <td>4</td>
+                              <td>01958/02/18</td>
+                              <td>120-204-5585</td>
+                              <td>Debit</td>
+                              <td>12/05/2018</td>
+                              <td>3,000,000</td>
+                              <td>95,0000,000</td>
+                              <td>Successful</td>
+                            </tr>
+                      <tr>
+                        <td>5</td>
+                          <td>01451/02/18</td>
+                          <td>125-554-5265</td>
+                          <td>Debit</td>
+                          <td>12/05/2018</td>
+                          <td>5,000</td>
+                          <td>95,0000</td>
+                          <td>Successful</td>
+                        </tr>
+                        <tr>
+                        <td>6</td>
+                          <td>01958/02/18</td>
+                          <td>120-554-5335</td>
+                          <td>Credit</td>
+                          <td>12/05/2018</td>
+                          <td>2,000</td>
+                          <td>97,0000</td>
+                          <td>Successful</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>01958/02/18</td>
+                            <td>120-554-5335</td>
+                            <td>Debit</td>
+                            <td>12/05/2018</td>
+                            <td>3,000,000</td>
+                            <td>97,0000,000</td>
+                            <td>Successful</td>
+                          </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>01958/02/18</td>
+                            <td>120-204-5585</td>
+                            <td>Debit</td>
+                            <td>12/05/2018</td>
+                            <td>3,000,000</td>
+                            <td>95,0000,000</td>
+                            <td>Successful</td>
+                          </tr>
+                  </tbody>
+                  <tfoot>
+                    <tr>
+                        <td>9</td>
+                        <td>Total</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>97,000</td>
+                        <td></td>
+                    </tr>
+                  </tfoot>
+                </table>
+                
+            </section>
+          <section class="staff">
           </section>
         <footer>
           <p>BANKA, Copyright &copy; 2019</p>

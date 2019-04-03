@@ -60,14 +60,14 @@
         </header>   
         <aside>
             <ul>
-                <li class="active tablinks">
+                <li class="active tablinks" onclick="openCity(event, 'London')" id="defaultOpen">
                         <i class="icon-home"></i>
                         <span>Dashboard</span>
                     </a>
                 </li>
                 <li class="separator">
                 </li>
-                <li class="tablinks">
+                <li class="tablinks" onclick="openCity(event, 'Paris')" id="defaultOpen">
                     <i class="icon-directions"></i>
                     <span>Transactions</span>
                 </a>
@@ -80,8 +80,8 @@
             <h1><span>Bank Accounts Details</span></h1> 
             <div class="create-an-account">
             <button class="add-btn" type="button">
-                <i class="icon-plus"></i><span class="info-header">New Account.</span>
-              </button></div>
+                <i class="icon-plus"></i><span>New Account</span>
+              </button>  </div>
             <div class="info-card">
                 <a href="#"><i class="icon-info pull-right"></i></a>
                 <table>
@@ -272,6 +272,8 @@
               </table>
               
           </section>
+          <section class="clients"></section>
+          <section class="staff"></section>
         <footer>
           <p>BANKA, Copyright &copy; 2019</p>
         </footer>

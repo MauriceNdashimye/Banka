@@ -255,7 +255,9 @@ aside{
   display: block;
 }
 
-.transactions{
+.transactions,
+.clients,
+.staff{
   display: none;
 }
 
@@ -263,6 +265,11 @@ aside{
   color: #00887a;
   margin: 5px;
   font-size: 18px;
+}
+
+.info-selector{
+  color: #064b44;
+  margin-left: 10px;
 }
 
 .add-btn i:hover{
@@ -570,6 +577,18 @@ select option[disabled] {
 select option{
   font-size: 15px;
   padding: 5px 0;
+}
+
+.function-select{
+  height: 25px;
+  border: #00887a solid 2px;
+  font-size: 14px;
+  margin-top: 13px;
+}
+
+.note{
+  font-weight: 100;
+  font-size:12px;
 }
 
 .user{
