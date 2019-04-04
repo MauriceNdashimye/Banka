@@ -179,4 +179,24 @@ function searchTable() {
     }
 }
 
+function validate(){
+    var username = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
+    if ( username == "user" && password == "password"){
+        window.open("./html/user-dashboard.html");
+        return false;
+    }
+    else if(username == "staff" && password == "password"){
+        window.open("./html/staff-dashboard.html");
+        return false;
+    }
+    else if(username == "admin" && password == "password"){
+        window.open("./html/admin-dashboard.html");
+        return false;
+    }
+    else{
+        alert("Wrong username or password");
+    }
+  }
+
 

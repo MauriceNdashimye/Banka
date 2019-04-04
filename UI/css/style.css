@@ -652,62 +652,33 @@ select option{
   display: none;
 }
 
-/*body {
-  background: #9bc86a;
-  font: 400 14px 'Calibri', 'Arial';
-  padding: 20px;
+@media (min-width: 1281px) {
+ 
 }
-blockquote {
-  color: white;
-  text-align: center;
-}
-*/
-/* 
+
+@media (min-width: 1025px) and (max-width: 1280px) {
   
-  @media #{$gl-xs}              {
-    
-    table					              { display:block;
-      > *,tr,td,th              { display:block }
-      
-      thead                     { display:none }
-      tbody tr                  { height:auto; padding:8px 0;
-        td                      { padding-left:45%; margin-bottom:12px;
-          &:last-child          { margin-bottom:0 }
-          &:before              { 
-            position:absolute;
-            font-weight:700;
-            width:40%;
-            left:10px;
-            top:0
-          }
-          
-          &:nth-child(1):before { content:"Code";}
-          &:nth-child(2):before { content:"Stock";}
-          &:nth-child(3):before { content:"Cap";}
-          &:nth-child(4):before { content:"Inch";}
-          &:nth-child(5):before { content:"Box Type";}
-        }        
-      }
-    }
-  } 
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+ 
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .container{
+    width: 100%;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .container{
+    width: 100%;
+  }
 
   
-  
-  
-  
-  @media (max-width: 768px) {
-    h1 {
-      width: 96%;
-    }
-  }
-  
-  
-  @media screen and (max-width: 700px){
-    .box{
-      width: 70%;
-    }
-    .popup{
-      width: 70%;
-    }
-  }
-    */ 	
+}
