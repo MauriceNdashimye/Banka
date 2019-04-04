@@ -12,9 +12,14 @@
     <body>
         <header>
           <div class="container">
+          <div class="logo-wrapper">
+            <div class="btn-menu">
+              <i class="icon-menu"></i>
+            </div>            
             <div id="main-logo">
               <h1>Banka</h1>
             </div>
+          </div>
             <div class="user pull-right">
                 <ul>
 
@@ -203,18 +208,24 @@
         </section>
         <section id="" class="transactions container well-default">
             <h1><span>Accounts Transctions</span></h1>
-            <div class="bank-select"> <span class="info-header">Select an Account</span>
+            <div class="selectors-wrapper">
+            <div class="account-selector">
+            <span class="info-header">Select an Account</span>
             <select id="staff-account" name="staff-accounts"  onchange="onCurrencySelected()">  
                 <option value="rwf-account">RWF Account</option>
                 <option value="usd-account">USD Account</option>
               </select>
-              <span class="added-selector info-header">Choose a Period</span>
+              </div>
+              <div class="period-selector">
+              <span class="info-header">Choose a Period</span>
               <select id="period-account" name="bank-accounts"  onchange="onPeriodSelected()">  
                   <option value="day-account">Day</option>
                   <option value="week-account">Week</option>
                   <option value="month-account">Month</option>
                 </select>
+              </div>
             </div>
+          </div>
             <table id="Account-transaction">
                 <thead>
                   <tr>

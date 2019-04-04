@@ -10,7 +10,7 @@ aside{
   position: absolute;
   background-color: #00887a;
   border-radius: 5px;
-  margin: 20px;
+  margin: 1%;
   width: 66px;
   border: #00887a solid 1px;
   overflow: hidden;
@@ -89,6 +89,7 @@ aside{
     
   header #main-logo{
     float:left;
+    margin-left: 10px;
   }
   
   header #main-logo h1{
@@ -206,7 +207,7 @@ aside{
   cursor: pointer;
   margin-left: 10px;
   box-shadow: -1px 1px 3px 0px #77a6f7;
-  width:46.1%;
+  width:50%;
 }
 
 .ok-btn, 
@@ -380,7 +381,7 @@ h1 i{
     padding: 20px;
     background: #77a6f7;
     border-radius: 5px;
-    width: 30%;
+    width: 40%;
     position: relative;
   }
   
@@ -647,38 +648,195 @@ select option{
 .search-wrap{
   width: 70%;
   position: absolute;
-  top: 10%;
+  top: 63px;
   z-index: 0;
   display: none;
 }
 
+.selectors-wrapper{
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+.account-selector{
+  display: flex;
+}
+
+.period-selector{
+  padding-left: 20px;
+}
+
+.logo-wrapper{
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  float: left;
+}
+
+.btn-menu{
+  padding: 5px 17px;
+  border-right: #00887a solid 1px;
+  display:none;
+}
+
+.icon-menu{
+  font-size: 31px;
+}
+
+
 @media (min-width: 1281px) {
- 
+  .add-btn, .search-btn{
+    margin-bottom: 10px;
+    width: 46.1%;
+  }
+  header #main-logo {
+    margin: 0;
+  }
 }
 
 @media (min-width: 1025px) and (max-width: 1280px) {
-  
+  .add-btn, .search-btn{
+    margin-bottom: 10px;
+    width: 96%;
+  } 
+
+  header #main-logo {
+    margin: 0;
+  }
+
 
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  
-}
+  .container{
+    width: auto;
+  }
+  .popup{
+    width: 50%;
+  }
+  .info-card{
+    padding: 0 10px;
+    margin: auto;
+    margin-bottom: 10px;
+  }
+  .well-content{
+    padding: 4px;
+    width: 47%;
+    margin-left: 1%;
+  }
+  .add-btn, .search-btn{
+    margin-bottom: 10px;
+    width: 96%;
+  } 
 
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
- 
+  .main{
+    padding:0;
+  }
+
+  .search-wrap {
+    width: 80%;
+  }
+
+  .btn-menu{
+    display: block;
+  } 
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
   .container{
-    width: 100%;
+    width: auto;
   }
+  .popup{
+    width: 80%;
+  }
+
+  .well-content{
+    width: 100%;
+    margin:0;
+    margin-bottom: 10px;
+    padding:0;
+  }
+
+  .add-btn, .search-btn{
+    margin: 10px 0;
+    width: 46.1%;
+  }
+
+  h1 {
+    margin-bottom: 55px;
+  }
+
+  .search-wrap{
+    width: 173%;
+    top: 98px;
+  }
+
+  .selectors-wrapper{
+    margin-top: -40px;
+    display: block;
+  }
+
+  .account-selector{
+    margin-bottom: 10px;
+  }
+
+  .period-selector{
+    padding:0;
+  }
+
+  .btn-menu{
+    display: block;
+  } 
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
   .container{
-    width: 100%;
+    width: auto;
   }
 
+  .auth-content{
+    width: auto;
+  }
+
+  .popup{
+    width: auto;
+  }
+
+  .well-content{
+    width: 100%;
+    margin:0;
+    margin-bottom: 10px;
+    padding:0;
+  }
+
+  .add-btn, .search-btn{
+    margin-bottom: 10px;
+    width: 96%;
+  }
   
+  h1 {
+    margin-bottom: 55px;
+  }
+
+  .search-wrap{
+    width: 173%;
+    top: 98px;
+  }
+
+  .selectors-wrapper{
+    margin-top: -40px;
+    display: block;
+  }
+
+  .account-selector{
+    margin-bottom: 10px;
+  }
+
+  .period-selector{
+    padding:0;
+  }
+
+  .btn-menu{
+    display: block;
+  } 
 }
