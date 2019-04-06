@@ -13,7 +13,7 @@
         <header>
           <div class="container">
           <div class="logo-wrapper">
-            <div class="btn-menu">
+            <div class="btn-menu" onclick="showSideMenu()">
               <i class="icon-menu"></i>
             </div>            
             <div id="main-logo">
@@ -30,15 +30,12 @@
                     </li>
               </ul>
             </div>
-            <div id="logout-toggler" class="con-tooltip pull-right">
+            <div id="logout-toggler" class="add-tooltip pull-right" title = "Account Details">
                     <img id="logout-menu-toggler" src="../assets/img/staff.png">
-                    <div class="tooltip ">
-                      <p>Jack Smith</p>
-                    </div>
                   </div>
           </div>
         </header>   
-        <aside>
+        <aside id="side-menu" onclick="showSideMenu()">
             <ul>
                 <li class="active tablinks">
                         <i class="icon-home"></i>
@@ -111,7 +108,7 @@
             </div>
             </div>
               <div class="info-card">
-                  <a href="#"><i class="icon-info pull-right"></i></a>
+                  <a href="#"><i class="icon-info pull-right add-tooltip" title="Detailed information"></i></a>
                   <div class="info-card-header"> Rwf Account transactions</div>
                   <table>
                       <tr>
@@ -147,7 +144,7 @@
                      </table>
                 </div>
                 <div class="info-card">
-                    <a href="#"><i class="icon-info pull-right"></i></a>
+                  <a href="#"><i class="icon-info pull-right add-tooltip" title="Detailed information"></i></a>
                     <div class="info-card-header"> USD Account transactions</div>
                     <table>
                         <tr>
@@ -184,22 +181,22 @@
                   </div>
           </div>
           <div class="well-content">
-              <h1><i class="icon-bell"></i><span>Notifications</span></h1>
+              <h1><i class="icon-bell add-tooltip" title="click for more info"></i><span>Notifications</span></h1>
               <div class="info-card">
-                  <a href="#"><i class="icon-info pull-right"></i></a>
-                  <p>
+                <a href="#"><i class="icon-info pull-right add-tooltip" title="Detailed information"></i></a>
+                <p>
                     You have a pending transaction to approve on the account 155678637564
                   </p>
               </div>
               <div class="info-card">
-                  <a href="#"><i class="icon-info pull-right"></i></a>
-                  <p>
+                <a href="#"><i class="icon-info pull-right add-tooltip" title="Detailed information"></i></a>
+                <p>
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nis
                   </p>
               </div>
               <div class="info-card">
-                  <a href="#"><i class="icon-info pull-right"></i></a>
-                  <p>
+                <a href="#"><i class="icon-info pull-right add-tooltip" title="Detailed information"></i></a>
+                <p>
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nis
                   </p>
               </div>
@@ -207,7 +204,7 @@
 
         </section>
         <section id="" class="transactions container well-default">
-            <h1><span>Accounts Transctions</span></h1>
+            <h1 class="h1-margin"><span>Accounts Transctions</span></h1>
             <div class="selectors-wrapper">
             <div class="account-selector">
             <span class="info-header">Select an Account</span>
@@ -307,10 +304,10 @@
               
           </section>
           <section id="transactions" class="clients container well-default">
-              <h1><span>Accounts Transctions</span></h1>
+              <h1 class="h1-margin"><span>Accounts Transctions</span></h1>
               <div id="search-wrap" class="search-wrap">
                   <div  class="search">
-                      <i class="icon-magnifier searchButton"></i><input type="text" id="searchTerm" class="searchTerm" onkeyup="searchTable()"placeholder="Enter a Bank Account Number">
+                      <i class="icon-magnifier searchButton add-tooltip" title="Click for more"></i><input type="text" id="searchTerm" class="searchTerm" onkeyup="searchTable()"placeholder="Enter a Bank Account Number">
                   </div>
                </div>
                <table id="Accounts-transaction">
