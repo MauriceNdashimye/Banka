@@ -3,10 +3,8 @@ node_js:
 - 6.10.3
 cache: npm
 
-install:
-  - npm ci
 script:
-  - npm start
+  - npm test
   - npm run build
 deploy:
   provider: pages
