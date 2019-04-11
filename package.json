@@ -1,0 +1,26 @@
+{
+  "name": "banka",
+  "version": "1.0.0",
+  "description": "A lightweight bank management application",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha || true"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MauriceNdashimye/Banka.git"
+  },
+  "keywords": [
+    "Bank"
+  ],
+  "author": "Maurice Ndashimye",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MauriceNdashimye/Banka/issues"
+  },
+  "homepage": "https://github.com/MauriceNdashimye/Banka#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.1.2"
+  }
+}

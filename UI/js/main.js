@@ -160,11 +160,9 @@ cancelAdd.onclick = function(){
     addForm.style.display = "none";
 };
 
-function searchTable() {
-    var input, filter, table, tr, td, i, txtValue;
-    input = document.getElementById("searchTerm");
-    filter = input.value.toUpperCase();
-    table = document.getElementById("Accounts-transaction");
+function searchTable(obj) {
+    filter = obj.value.toUpperCase();
+    table = document.getElementById("accounts-transaction");
     tr = table.getElementsByTagName("tr");
     for (i = 0; i < tr.length; i++) {
       td = tr[i].getElementsByTagName("td")[2];
@@ -209,7 +207,6 @@ function showSideMenu(){
         sideMenu.remove('hide-side-menu');
         sideMenu.add('show-side-menu');
     }
-    console.log(sideMenu)
 }
 
 (function(){
@@ -247,4 +244,3 @@ function showSideMenu(){
 
 
 })()
-

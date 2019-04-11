@@ -78,13 +78,14 @@ aside{
 
 .divider{
     height: 1px;
-    background-color: #00887a;
+    background-color: #77a6f7;
     margin:0;
   }
 
 .user-name{
     color: #00887a;
     padding: 5px 0;
+    font-size: 18px;
   }
 
   header li a{
@@ -595,7 +596,7 @@ select option{
   margin: 20px 0;
 }
 
-.searchTerm {
+.search-term {
   float: left;
   width: 100%;
   border: 3px solid #00887a;
@@ -608,12 +609,12 @@ select option{
   padding-left: 33px;
 }
 
-.searchTerm:focus{
+.search-term:focus{
   color: #064b44;
   padding-left: 33px;
 }
 
-.searchButton {
+.search-button {
   position: absolute;
   left: 6px;
   top: 6px;
