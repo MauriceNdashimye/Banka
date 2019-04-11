@@ -1,7 +1,15 @@
 language: node_js
 node_js:
-- 6.10.3
+- "stable"
 cache: npm
+
+before_script: chmod 0777 ./node_modules/.bin/mocha
+
+script:
+  - npm run test
+
+after_success:
+  - npm run coveralls
 
 deploy:
   provider: pages
@@ -11,3 +19,6 @@ deploy:
   local_dir: UI
   on:
     branch: master
+
+notifications:
+  email: false
