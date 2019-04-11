@@ -5,8 +5,7 @@
   "main": "app.js",
   "scripts": {
     "test": "mocha || true",
-    "lint": "eslint '**/*.js'",
-    "coveralls": "cat cover/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
+    "test:coveralls": "cat cover/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
   },
   "repository": {
     "type": "git",
