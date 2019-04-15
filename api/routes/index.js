@@ -10,7 +10,7 @@ routes.post('/users/signup/', UserController.userSignUp);
 routes.post('/auth/signin/', AuthController.authSignIn);
 routes.delete('/users/:id', UserController.deleteUser);
 //accounts routes
-routes.post('/accounts/', AccountController.createAccount);
-routes.patch('/account/id', AccountController.changeAccountStatus);
-routes.delete('/accounts/id', AccountController.accoutDelete);
+// routes.post('/accounts/', AccountController.createAccount);
+// routes.patch('/account/id', AccountController.changeAccountStatus);
+// routes.delete('/accounts/id', AccountController.accoutDelete);
 export default routes;

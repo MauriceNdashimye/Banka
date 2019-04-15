@@ -5,7 +5,8 @@ const accounts = [
     firstName: 'Shannon',
     lastName: 'Jackson',
     accNumer: '1',
-    type: 'savings', 
+    type: 'savings',
+    balance: 5000
   },
   {
     _id: 2,
@@ -13,7 +14,8 @@ const accounts = [
     firstName: 'Shannon',
     lastName: 'Jackson',
     accNumer: '2',
-    type: 'savings', 
+    type: 'savings',
+    balance: 5000
   }
 ];
 export default accounts;

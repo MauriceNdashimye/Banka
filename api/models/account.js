@@ -1,13 +1,15 @@
 import mongoose from 'mongoose';
 
 const accountModel = mongoose.Schema({
- _id : Integer,
-accountNumber: Integer,
-createdOn : DateTime,
-owner : Integer, //user id
-type : String , // savings, current
-status : String, // draft, active, or dormant
-balance : Float
+  _id: mongoose.Schema.Types.ObjectId,
+  email: String,
+  phoneNumber: Number,
+  idNumber: Number,
+  firstName: { type:String },
+  lastName: String,
+  password: String,
+  type: String, 
+  isAdmin: Boolean,
 });
 
 module.exports = mongoose.model('Account', accountModel)

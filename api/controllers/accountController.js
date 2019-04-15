@@ -22,11 +22,24 @@ class AccountController {
       const newAccount = new Account({
         _id: new mongoose.Types.ObjectId(),
         accountNumber: accounts.length + 1,
+        createdOn: Date.now(),
         firstName: user.firstName,
         lastName: user.lastName,
         email: user.email,
         type: 'active',
         openingBalance: req.body.openingBalance
+
+        // _id : mongoose.Schema.Types.ObjectId,
+        // accountNumber: Integer,
+        // createdOn : DateTime,
+        // owner : Integer, //user id
+        // type : String , // savings, current
+        // status : String, // draft, active, or dormant
+        // balance : Float
+
+
+
+
       });
       accounts.push(newAccount)
       res.status(201).json({
@@ -55,14 +68,13 @@ class AccountController {
       found = accounts.some(account => account._id.toString() === req.params.id);
       if (found) {
         for (var i = 0; i < accounts.length; i++) {
-          var updatedAcc = accounts[i];
-          if (updatedAcc._id.toString() === req.params.id) {
+          if (accounts[i]._id.toString() === req.params.id) {
             for (const prop of req.body) {
-              updatedAcc[prop.propName] = prop.value;
+              accounts[i][prop.propName] = prop.value;
             };
+            updatedAcc = accounts[i]
           };
         };
-        accounts.push(updatedAcc);
         res.status(201).json({
           status: 201,
           data: {
