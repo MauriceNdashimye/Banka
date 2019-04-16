@@ -181,15 +181,15 @@ function validate(){
     var username = document.getElementById("username").value;
     var password = document.getElementById("password").value;
     if ( username == "user" && password == "password"){
-        window.open("./html/user-dashboard.html");
+        window.open("./UI/html/user-dashboard.html");
         return false;
     }
     else if(username == "staff" && password == "password"){
-        window.open("./html/staff-dashboard.html");
+        window.open("./UI/html/staff-dashboard.html");
         return false;
     }
     else if(username == "admin" && password == "password"){
-        window.open("./html/admin-dashboard.html");
+        window.open("./UI/html/admin-dashboard.html");
         return false;
     }
     else{
