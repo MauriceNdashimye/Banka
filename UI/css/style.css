@@ -1,28 +1,39 @@
+html{
+  min-height: 100%;
+}
+
 body{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 15px;
     line-height: 1.5;
     padding: 0;
+    margin:0;
     background-color: #d3e3fc;
+    min-height: 100%;
 }
 
 aside{
   position: absolute;
-  background-color: #00887a;
+  background-color: #4a8cff;
   border-radius: 5px;
-  margin: 1%;
-  width: 66px;
-  border: #00887a solid 1px;
+  width: 215px;
+  border: #4a8cff solid 1px;
   overflow: hidden;
-  transition: width 800ms;
+  transition: transform 800ms;
   z-index: 1;
   display:none;
+  height: 91vh;
+  left:-212px;
 }
 
 .container{
     width: 80%;
     margin: auto;
     overflow: auto;
+}
+
+#main{
+  min-height: 79vh;
 }
 
 .add-form,
@@ -32,7 +43,7 @@ aside{
   width: 87.5%;
   margin: 10px;
   padding: 15px;
-  border: #00887a 2px solid;
+  border: #4a8cff 2px solid;
   box-shadow: -1px 1px 3px 0px #77a6f7;
   border-radius: 9px;
 }
@@ -42,7 +53,7 @@ aside{
   margin: 5px;
   padding: 3px 5px;
   width: 43.5%;
-  border: #00887a solid 1px;
+  border: #4a8cff solid 1px;
 }
 
 .search-form .account-no{
@@ -59,19 +70,19 @@ aside{
     color:#ffffff;
     padding-top:5px;
     min-height:45px;
-    border-bottom:#ffccbc 3px solid;
+    border-bottom:#4a8cff 3px solid;
   }
 
   header ul{
     padding:0;
     margin: 0;
-    background-color:#ffccbc;
+    background-color:#4a8cff;
   }
   
   header li{
 
     list-style: none;
-    background-color:#ffccbc;
+    background-color:#4a8cff;
     font-size:16px;
     margin-left: 10px;
   }
@@ -83,20 +94,20 @@ aside{
   }
 
 .user-name{
-    color: #00887a;
+    color: #4a8cff;
     padding: 5px 0;
     font-size: 18px;
   }
 
   header li a{
-    color:#00887a;
+    color:#4a8cff;
     text-decoration:none;
     text-align: center;
   }
     
   header #main-logo{
     float:left;
-    margin-left: 10px;
+    margin-left: 17px;
   }
   
   header #main-logo h1{
@@ -107,16 +118,16 @@ aside{
   header img{
     height: 35px;
     border-radius: 50%;
-    border: #ffccbc solid 2px;
+    border: #4a8cff solid 2px;
   }
   
   header .highlight, header .active a{
-    color:#ffccbc;
+    color:#4a8cff;
     font-weight:bold;
   }
   
   header a:hover{
-    color:#05685e;
+    color:#4a8cff;
     font-weight:bold;
   }
 
@@ -129,7 +140,7 @@ aside{
   footer{
     padding:10px;
     color:#ffffff;
-    background-color:#00887a;
+    background-color:#77a6f7;
     text-align: center;
   }
 
@@ -138,7 +149,7 @@ aside{
   }
 /*Authentication*/
 .auth-content{
-    border: #ffccbc solid 1px;
+    border: #4a8cff solid 1px;
     width: 400px;
     border-radius: 20px;
     margin:auto;
@@ -158,7 +169,7 @@ aside{
     height: 35px;
     padding-left: 3%;
     font-size:15px;
-    border: #ffccbc solid 1px;
+    border: #4a8cff solid 1px;
 }
 
 .form-text{
@@ -167,7 +178,7 @@ aside{
   margin-bottom: 20px;
   padding-left: 3%;
   font-size:15px;
-  border: #ffccbc solid 1px;
+  border: #4a8cff solid 1px;
 }
 
 .pull-right{
@@ -204,7 +215,7 @@ aside{
 .search-btn, 
 .search-btn span, 
 .add-btn span{
-  background-color: #6d3a3a;
+  background-color: #4a8cff;
   border: none;
   padding: 4px 4px 0 4px;
   width: fit-content;
@@ -222,7 +233,7 @@ aside{
 .search-btn, 
 .search-btn span
 {
-  background-color: #00887a;
+  background-color: #4a8cff;
 }
 
 .add-btn i, .search-btn i{
@@ -238,11 +249,11 @@ aside{
 }
 
 .cancel-btn:hover, .add-btn:hover, .add-btn span:hover{
-  color: #ffccbc;
+  color: #ffffff;
 }
 
 .ok-btn:hover, .search-btn:hover, .search-btn span:hover{
-  color: #77a6f7;
+  color: #ffffff;
 }
 
 .ok-btn, .cancel-btn{
@@ -270,7 +281,7 @@ aside{
 }
 
 .info-header{
-  color: #00887a;
+  color: #4a8cff;
   margin: 5px;
   font-size: 18px;
 }
@@ -281,11 +292,11 @@ aside{
 }
 
 .add-btn i:hover{
-  color: #ffccbc;
+  color: #4a8cff;
 }
 
 .info-card-header{
-  color: #00887a;
+  color: #4a8cff;
   margin: 5px;
   font-size: 18px;
   width: 90%;
@@ -296,7 +307,7 @@ aside{
 .info-card{
   width: 90%;
   margin: 10px;
-  border: #00887a solid 2px;
+  border: #4a8cff solid 2px;
   border-radius: 10px;
   padding-left: 20px;
   box-shadow: -1px 1px 3px 0px #77a6f7;
@@ -306,11 +317,11 @@ aside{
   margin-top: 10px;
   margin-right: 10px;
   font-size: 40px;
-  color: #00887a;
+  color: #4a8cff;
 }
 
 .info-card i:hover{
-  color:#ffccbc;
+  color:#4a8cff;
 }
 
 .info-card p span{
@@ -324,7 +335,7 @@ h1{
 }
 h1 span{
   padding-left: 10px;
-  color: #00887a;
+  color: #4a8cff;
 }
 
 h1 i{
@@ -334,14 +345,14 @@ h1 i{
 }
 .btn-primary{
     width: 100%;
-    background-color: #00887a;
+    background-color: #4a8cff;
     color:#ffffff;
     border: none;
     height: 40px;
     font-size: 18px;
 }
 .btn-primary:hover{
-    background-color:#05685e ;
+    background-color:#3d84ff ;
 }
 
 .forget-password{
@@ -400,7 +411,7 @@ h1 i{
     font-size: 30px;
     font-weight: bold;
     text-decoration: none;
-    color: #00887a;
+    color: #4a8cff;
   }
   .popup .close:hover {
     color:#064b44;
@@ -420,7 +431,7 @@ h1 i{
 
 .tooltip {    
   position: absolute;
-  background: #00887a;
+  background: #4a8cff;
   border-radius:4px;
   padding: 6px 12px;
   font-family: arial;
@@ -433,7 +444,7 @@ h1 i{
   height: 0;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
-  border-left: 10px solid #00887a;
+  border-left: 10px solid #4a8cff;
   position:absolute;
   left: 96%;
 }
@@ -454,7 +465,7 @@ aside ul li:hover{
 
 aside ul li.active{
   background-color: #77a6f7;
-  border-left: #ffccbc solid 6px;
+  border-left: #4a8cff solid 6px;
   padding-left: 16px;
 }
 
@@ -469,7 +480,7 @@ aside ul li.active>span{
 .separator{
   height: 8px;
   padding:0;
-  background-color: #00887a;
+  background-color: #4a8cff;
 }
 
 aside i{
@@ -481,13 +492,17 @@ aside span{
   padding-left: 21px;
   font-size: 18px;
   text-transform: uppercase;
-  color: #00887a;
+  color: #4a8cff;
   position: absolute;
 }
 
 aside:hover{
-  width: 200px;
+  transform: translateX(200px);
 }
+
+
+
+
 
 .info-card table{
   width: 80%;
@@ -506,7 +521,7 @@ aside:hover{
 
 /*table style*/
 table{
-  border: #00887a solid 2px;
+  border: #4a8cff solid 2px;
   border-radius: 5px;
   padding: 2px;
   margin:auto;
@@ -519,7 +534,7 @@ table th{
   padding: 8px;
   font-weight: normal;
   font-size: 19px;
-  background-color: #00887a;
+  background-color: #4a8cff;
   color: #ffffff;
   width: 10%;
 }
@@ -543,7 +558,7 @@ table td{
 select{
   margin-left: 5px;
   height: 36px;
-  border: #00887a solid 2px;
+  border: #4a8cff solid 2px;
   font-size: 18px;
   color: #064b44;
   border-radius: 5px;
@@ -560,7 +575,7 @@ select option{
 
 .function-select{
   height: 25px;
-  border: #00887a solid 2px;
+  border: #4a8cff solid 2px;
   font-size: 14px;
   margin-top: 13px;
 }
@@ -599,7 +614,7 @@ select option{
 .search-term {
   float: left;
   width: 100%;
-  border: 3px solid #00887a;
+  border: 3px solid #4a8cff;
   padding: 5px;
   height: 20px;
   border-radius: 5px;
@@ -618,7 +633,7 @@ select option{
   position: absolute;
   left: 6px;
   top: 6px;
-  color: #00887a;
+  color: #4a8cff;
   border-radius: 5px;
   font-size: 25px;
 }
@@ -653,8 +668,6 @@ select option{
 
 .btn-menu{
   padding: 5px 17px;
-  border-right: #00887a solid 1px;
-  display:none;
 }
 
 .icon-menu{
@@ -662,7 +675,7 @@ select option{
 }
 
 .show-side-menu{
-  display: block;
+  
 }
 
 @media (min-width: 1281px) {
@@ -670,9 +683,10 @@ select option{
     margin-bottom: 10px;
     width: 46.1%;
   }
-  header #main-logo {
-    margin: 0;
-  }
+
+  .btn-menu {
+    padding: 5px 0px;
+}
  aside{
     display: block;
   }
@@ -684,13 +698,14 @@ select option{
     width: 96%;
   } 
 
-  header #main-logo {
-    margin: 0;
-  }
-
- aside{
+  
+.btn-menu {
+  padding: 5px 0px;
+} 
+  aside{
     display: block;
   }
+  
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -717,15 +732,21 @@ select option{
 
   .main{
     padding:0;
+    min-height: 100vh;
   }
 
   .search-wrap {
     width: 80%;
   }
+  
 
-  .btn-menu{
-    display: block;
-  }   
+  .pull-right {
+    margin-right: 10px;
+  }
+
+  header #main-logo {
+    margin-left: 0;
+}
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
@@ -769,10 +790,13 @@ select option{
   .period-selector{
     padding:0;
   }
+  .pull-right {
+    margin-right: 10px;
+  }
 
-  .btn-menu{
-    display: block;
-  } 
+  header #main-logo {
+    margin-left: 0;
+}
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
@@ -799,6 +823,10 @@ select option{
     margin-bottom: 10px;
     width: 96%;
   }
+
+  header #main-logo {
+    margin-left: 0;
+}
   
   .h1-margin{
     margin-bottom: 55px;
@@ -821,8 +849,7 @@ select option{
   .period-selector{
     padding:0;
   }
-
-  .btn-menu{
-    display: block;
-  } 
+  .pull-right {
+    margin-right: 10px;
+  }
 }

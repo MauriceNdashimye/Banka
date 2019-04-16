@@ -198,7 +198,7 @@ function validate(){
   }
 
 function showSideMenu(){
-    var sideMenu = document.getElementById("side-menu").classList
+    var sideMenu = document.getElementsByTagName("aside").classList
     if(sideMenu.contains('show-side-menu')){
         sideMenu.remove('show-side-menu');
         sideMenu.add('hide-side-menu');
