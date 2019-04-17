@@ -24,11 +24,8 @@ class UserController {
               firstName: req.body.firstName,
               lastName: req.body.lastName,
               email: req.body.email,
-              phoneNumber: req.body.phoneNumber || 780000000,
-              idNumber: req.body.idNumber || 123123123,
               password: hash,
-              type: req.body.type || 'client or staff',
-              isAdmin: req.body.isAdmin || false,
+              type: 'user'
             });
 
             if (!newUser.firstName || !newUser.lastName || !newUser.email) {
@@ -84,15 +81,10 @@ class UserController {
 
   static deleteUser(req, res) {
     try {
-      found = users.some(user => user._id.toString() === req.params.id);
+      found = users.find(user => user._id.toString() === req.params.id);
       if (found) {
-        for (var i = 0; i < users.length; i++) {
-          var obj = users[i];
-          if (obj._id.toString() === req.params.id) {
-            users.splice(i, 1);
-          };
-          res.json(users);
-        }
+        users.splice(indexOf(found), 1);
+        res.status(200).json(users);
       } else {
         res.status(400).json({
           msg: `No user with id: ${req.params.id}`

@@ -1,20 +1,20 @@
 const accounts = [
   {
     _id: 1,
-    email: 'shannon@gmail.com',
-    firstName: 'Shannon',
-    lastName: 'Jackson',
-    accNumer: '1',
+    accountNumber: 2,
+    owner: 1,
+    createdOn: Date.now,
     type: 'savings',
+    status: 'active',
     balance: 5000
   },
   {
     _id: 2,
-    email: 'shaon@gmail.com',
-    firstName: 'Shannon',
-    lastName: 'Jackson',
-    accNumer: '2',
-    type: 'savings',
+    accountNumber: 1,
+    owner: 1,
+    createdOn: Date.now,
+    type: 'current',
+    status: 'active',
     balance: 5000
   }
 ];
